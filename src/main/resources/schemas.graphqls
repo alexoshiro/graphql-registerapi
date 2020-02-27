@@ -1,0 +1,21 @@
+schema {
+	query: Query
+}
+
+type Query {
+	people: [Person]
+	person(cpf: String): Person
+}
+
+type Person {
+	id: String
+	name: String
+	gender: String
+	email: String
+	birthDate: String
+	nationality: String
+	citizenship: String
+	cpf: String
+	creationDate: String
+	updatedDate: String
+}
